@@ -1,0 +1,13 @@
+# Dependências necessárias
+ttkbootstrap>=1.10.1
+groq>=0.4.2
+python-dotenv>=1.0.0
+
+# Não são necessárias dependências externas além das bibliotecas padrão do Python
+# O projeto utiliza apenas módulos built-in:
+# - tkinter (GUI)
+# - sqlite3 (Base de dados)
+# - datetime (Manipulação de datas)
+# - json (Exportação/Importação JSON)
+# - csv (Exportação/Importação CSV)
+# - os (Operações com sistema de ficheiros) 
