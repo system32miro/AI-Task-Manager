@@ -1,134 +1,152 @@
-# Gestor de Tarefas com IA
+# **AI Task Manager**
 
-Uma aplicação desktop moderna em Python para gestão de tarefas, com interface gráfica intuitiva e assistente de IA integrado.
+A modern desktop application in **Python** for **task management**, featuring an **intuitive graphical interface** and an **integrated AI assistant**.
 
-![Gestor de Tarefas](https://github.com/system32miro/gestor-tarefas-ia/raw/main/Captura%20de%20ecrã%202025-02-10%20110341.png)
+![Task Manager](https://github.com/system32miro/gestor-tarefas-ia/raw/main/Captura%20de%20ecrã%202025-02-10%20110341.png)
 
-## 🌟 Funcionalidades Principais
+---
 
-### Gestão de Tarefas
-- ✅ Criar, editar e eliminar tarefas
-- 📋 Organizar por categorias (Trabalho, Estudos, Pessoal)
-- ⭐ Definir prioridades (Alta, Média, Baixa)
-- 🔄 Gerir estados (Pendente, Em Progresso, Concluída)
-- 📅 Definir datas de vencimento com calendário integrado
-- 🌳 Suporte a subtarefas (hierarquia de tarefas)
+## 🌟 **Main Features**
 
-### Interface Moderna
-- 🎨 Temas personalizáveis (darkly, cosmo, flatly, etc.)
-- 🔍 Pesquisa e filtros avançados
-- 📊 Estatísticas detalhadas
-- 📱 Interface responsiva e adaptável
-- 🖱️ Menu de contexto e atalhos de teclado
+### **Task Management**
+- ✅ Create, edit, and delete tasks
+- 📋 Organize by categories (**Work, Study, Personal**)
+- ⭐ Set priorities (**High, Medium, Low**)
+- 🔄 Manage task statuses (**Pending, In Progress, Completed**)
+- 📅 Set due dates with **integrated calendar**
+- 🌳 Support for **subtasks** (task hierarchy)
 
-### Assistente IA
-- 🤖 Análise automática de novas tarefas
-- 💡 Sugestões inteligentes de categorização
-- 📈 Recomendações de prioridade
-- 🔄 Análise de tarefas existentes
-- 💬 Chat interativo para ajuda e sugestões
+### **Modern Interface**
+- 🎨 Customizable themes (**darkly, cosmo, flatly, etc.**)
+- 🔍 **Advanced search and filtering**
+- 📊 **Detailed statistics**
+- 📱 **Responsive and adaptive interface**
+- 🖱️ **Context menu and keyboard shortcuts**
 
-### Importação/Exportação
-- 📤 Exportar tarefas para JSON/CSV
-- 📥 Importar tarefas de JSON/CSV
-- 💾 Backup automático
-- 📁 Seleção personalizada de diretórios
+### **AI Assistant**
+- 🤖 **Automatic task analysis**
+- 💡 **Smart categorization suggestions**
+- 📈 **Priority recommendations**
+- 🔄 **Analysis of existing tasks**
+- 💬 **Interactive chat
 
-### Armazenamento
-- 🗄️ Base de dados SQLite
-- 🔒 Persistência automática
-- 🔄 Sincronização em tempo real
+ for assistance and suggestions**
 
-## 🚀 Instalação
+### **Import/Export**
+- 📤 **Export tasks** to **JSON/CSV**
+- 📥 **Import tasks** from **JSON/CSV**
+- 💾 **Automatic backup**
+- 📁 **Custom directory selection**
 
-1. Clone o repositório:
+### **Storage**
+- 🗄️ **SQLite database**
+- 🔒 **Automatic persistence**
+- 🔄 **Real-time synchronization**
+
+---
+
+## 🚀 **Installation**
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/system32miro/gestor-tarefas-ia.git
    ```
 
-2. Navegue até à pasta do projeto:
+2. **Navigate to the project folder:**
    ```bash
    cd gestor-tarefas-ia
    ```
 
-3. Instale as dependências:
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Configure a API da IA:
+4. **Configure the AI API:**
    ```bash
    cp .env.example .env
    ```
-   Edite o arquivo `.env` e adicione sua chave API:
+   Edit the `.env` file and add your API key:
    ```
-   GROQ_API_KEY=sua_chave_aqui
+   GROQ_API_KEY=your_api_key_here
    ```
 
-## 🎯 Utilização
+---
 
-1. Execute o programa:
+## 🎯 **Usage**
+
+1. **Run the program:**
    ```bash
    python main.py
    ```
 
-2. Interface Principal:
-   - Painel esquerdo: Formulário para novas tarefas e lista de tarefas
-   - Painel direito: Assistente IA interativo
-   - Botões inferiores: Ações rápidas e exportação/importação
+2. **Main Interface:**
+   - **Left Panel:** Form to add new tasks and task list.
+   - **Right Panel:** Interactive AI assistant.
+   - **Bottom Buttons:** Quick actions and import/export options.
 
-3. Atalhos de Teclado:
-   - `Ctrl+N`: Nova tarefa
-   - `Ctrl+D`: Eliminar tarefa selecionada
-   - `Ctrl+F`: Focar na pesquisa
-   - `F5`: Atualizar lista de tarefas
+3. **Keyboard Shortcuts:**
+   - `Ctrl+N`: New task
+   - `Ctrl+D`: Delete selected task
+   - `Ctrl+F`: Focus search
+   - `F5`: Refresh task list
 
-4. Assistente IA:
-   - Use o chat para pedir sugestões
-   - Comandos disponíveis:
-     - `/criar_tarefa [título]`
-     - `/listar_tarefas`
-     - `/ajuda`
+4. **AI Assistant:**
+   - Use the chat for suggestions.
+   - Available commands:
+     - `/create_task [title]`
+     - `/list_tasks`
+     - `/help`
 
-## Estrutura do Projeto
+---
+
+## **Project Structure**
 
 ```
 gestor_tarefas/
-│── main.py              # Ponto de entrada
-│── gui.py              # Interface gráfica
-│── tasks.py            # Gestão de tarefas
-│── database.py         # Base de dados
-│── ai_helper.py        # Integração com IA
-│── requirements.txt    # Dependências
-│── README.md          # Documentação
-│── .env               # Configurações da API
-│── data/              # Dados e backups
-    │── tasks.db       # Base de dados SQLite
-    │── *.json         # Exportações JSON
-    │── *.csv          # Exportações CSV
+│── main.py              # Entry point
+│── gui.py               # Graphical interface
+│── tasks.py             # Task management
+│── database.py          # Database handling
+│── ai_helper.py         # AI integration
+│── requirements.txt     # Dependencies
+│── README.md            # Documentation
+│── .env                 # API configurations
+│── data/                # Data and backups
+    │── tasks.db         # SQLite database
+    │── *.json           # JSON exports
+    │── *.csv            # CSV exports
 ```
 
-## 🤝 Contribuições
+---
 
-Contribuições são bem-vindas! Por favor:
+## 🤝 **Contributing**
 
-1. Faça fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
-3. Commit suas alterações (`git commit -m 'Adiciona MinhaFeature'`)
-4. Push para a branch (`git push origin feature/MinhaFeature`)
-5. Abra um Pull Request
+Contributions are welcome! Please follow these steps:
 
-## 📝 Licença
+1. **Fork the project**.
+2. **Create a branch** for your feature (`git checkout -b feature/MyFeature`).
+3. **Commit your changes** (`git commit -m 'Add MyFeature'`).
+4. **Push to the branch** (`git push origin feature/MyFeature`).
+5. **Open a Pull Request**.
 
-Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+---
 
-## 📫 Suporte
+## 📝 **License**
 
-Para suporte ou dúvidas:
-1. Abra uma [issue](https://github.com/system32miro/gestor-tarefas-ia/issues)
-2. Consulte a [documentação](https://github.com/system32miro/gestor-tarefas-ia/wiki)
-3. Entre em contacto com os mantenedores
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-## ⭐ Mostre seu apoio
+---
 
-Se este projeto te ajudou, por favor dê uma estrela! 
+## 📫 **Support**
+
+For support or questions:
+1. **Open an [issue](https://github.com/system32miro/gestor-tarefas-ia/issues)**
+2. **Check the [documentation](https://github.com/system32miro/gestor-tarefas-ia/wiki)**
+3. **Contact the maintainers**
+
+---
+
+## ⭐ **Show Your Support**
+
+If this project helped you, please **give it a star!** ⭐
